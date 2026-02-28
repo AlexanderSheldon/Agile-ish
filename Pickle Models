@@ -1,1 +1,12 @@
+# cnc model
+import pickle
+with open('/Workspace/Users/abbystanger@outlook.com/sklearn_logreg.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
+print("CNC model loaded from pickle.")
 
+# nasa model
+import pickle
+
+with open('/Workspace/Users/abbystanger@outlook.com/sklearn_nasa_rul.pkl', 'rb') as f:
+    nasa_rul_loaded = pickle.load(f)
+print("NASA RUL regression model loaded from pickle.")
